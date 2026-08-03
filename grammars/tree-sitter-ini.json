@@ -1,7 +1,7 @@
 {
   "name": "INI",
   "scopeName": "source.ini",
-  "type": "modern-tree-sitter",
+  "type": "tree-sitter",
   "parser": "tree-sitter-ini",
   "injectionRegex": "^(ini)$",
   "fileTypes": ["ini", "cfg", "conf", "desktop", "editorconfig", "inf", "prefs"],
