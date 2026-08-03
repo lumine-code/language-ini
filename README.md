@@ -4,7 +4,7 @@ INI language support.
 
 ## Features
 
-- **Grammars**: provides Tree-sitter grammars.
+- **Grammars**: provides Tree-sitter grammars, built from [tree-sitter-ini](https://github.com/justinmk/tree-sitter-ini).
 - **Syntax highlighting**: sections, keys and values, with both `;` and `#` recognised as comments.
 - **Values**: picks numbers and the usual spellings of a flag out of otherwise untyped text.
 - **Folding**: folds each section.
