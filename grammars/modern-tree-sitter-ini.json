@@ -1,0 +1,24 @@
+{
+  "name": "INI",
+  "scopeName": "source.ini",
+  "type": "modern-tree-sitter",
+  "parser": "tree-sitter-ini",
+  "injectionRegex": "^(ini)$",
+  "fileTypes": ["ini", "cfg", "conf", "desktop", "editorconfig", "inf", "prefs"],
+  "comments": {
+    "start": "; "
+  },
+  "treeSitter": {
+    // Pin a tag or a full SHA, never a branch. Verify the ref is on the main
+    // line before trusting it — `gh api repos/OWNER/REPO/compare/<ref>...HEAD`
+    // reporting `diverged` or a nonzero `behind` means it is not.
+    "parserSource": "github:justinmk/tree-sitter-ini#v1.4.0",
+    "wasmBuildTool": "tree-sitter-cli#v0.26.11",
+    "grammar": "tree-sitter-ini/tree-sitter-ini.wasm",
+    "highlightsQuery": "tree-sitter-ini/highlights.scm",
+    "foldsQuery": "tree-sitter-ini/folds.scm",
+    // No indents query: INI sections do not nest, so there is nothing to
+    // indent and a rule here would only fight the user.
+    "tagsQuery": "tree-sitter-ini/tags.scm"
+  }
+}
