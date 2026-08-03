@@ -4,7 +4,10 @@
   "type": "tree-sitter",
   "parser": "tree-sitter-ini",
   "injectionRegex": "^(ini)$",
-  "fileTypes": ["ini", "cfg", "conf", "desktop", "editorconfig", "inf", "prefs"],
+  // `npmrc` is npm's own config, which npm reads with the `ini` package. It
+  // used to be claimed by language-shellscript, where a `;` comment is a
+  // command separator and every comment tokenized as shell.
+  "fileTypes": ["ini", "cfg", "conf", "desktop", "editorconfig", "inf", "npmrc", "prefs"],
   "comments": {
     "start": "; "
   },
