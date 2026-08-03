@@ -10,6 +10,10 @@ INI language support.
 - **Folding**: folds each section.
 - **Symbol navigation**: section headers.
 
+## Installation
+
+To install `language-ini` search for _language-ini_ in the Install pane of the Lumine settings or run `lumine --install lumine-code/language-ini`.
+
 ## Usage
 
 Also used for `.cfg`, `.conf`, `.desktop`, `.editorconfig`, `.inf` and `.prefs` files. Java `.properties` and Git's config files are deliberately left to their own grammars.
