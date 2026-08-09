@@ -9,7 +9,7 @@ const path = require("path");
 
 describe("INI Tree-sitter grammar", () => {
   beforeEach(async () => {
-    await atom.packages.activatePackage("language-ini");
+    await lumine.packages.activatePackage("language-ini");
   });
 
   it("tokenizes the fixture", async () => {

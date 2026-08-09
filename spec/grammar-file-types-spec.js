@@ -17,19 +17,19 @@ const CLAIMED = ["ini", "cfg", "conf", "desktop", "editorconfig", "inf", "npmrc"
 
 describe("INI grammar file types", () => {
   beforeEach(async () => {
-    await atom.packages.activatePackage("language-ini");
+    await lumine.packages.activatePackage("language-ini");
   });
 
   it("claims npmrc along with the ini types", () => {
-    const grammar = atom.grammars.grammarForScopeName("source.ini");
+    const grammar = lumine.grammars.grammarForScopeName("source.ini");
     expect(grammar).toBeTruthy();
     expect(grammar.fileTypes.slice().sort()).toEqual(CLAIMED.slice().sort());
   });
 
   it("scopes a semicolon comment as a comment, not a separator", async () => {
-    const editor = await atom.workspace.open();
+    const editor = await lumine.workspace.open();
     editor.setText("; install-links means copy, not symlink\ninstall-links=true\n");
-    atom.grammars.assignLanguageMode(editor.getBuffer(), "source.ini");
+    lumine.grammars.assignLanguageMode(editor.getBuffer(), "source.ini");
     await editor.languageMode.ready;
 
     expect(editor.scopeDescriptorForBufferPosition([0, 2]).scopes).toContain("comment.line.ini");
