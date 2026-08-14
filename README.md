@@ -12,7 +12,7 @@ INI language support.
 
 ## Installation
 
-To install `language-ini` search for _language-ini_ in the Install pane of the Lumine settings or run `lumine --install lumine-code/language-ini`.
+To install `language-ini` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-ini`.
 
 ## Usage
 
@@ -20,8 +20,8 @@ Also used for `.cfg`, `.conf`, `.desktop`, `.editorconfig`, `.inf` and `.prefs` 
 
 ## Services
 
-- **hyperlink.injection** (`^1.0.0`): consumed to highlight URLs inside INI files as clickable links.
-- **todo.injection** (`^1.0.0`): consumed to highlight `TODO`-style markers inside comments.
+- `hyperlink.injection`: consumed to highlight URLs inside INI files as clickable links.
+- `todo.injection`: consumed to highlight `TODO`-style markers inside comments.
 
 ## Contributing
 
