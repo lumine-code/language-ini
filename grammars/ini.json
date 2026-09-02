@@ -3,7 +3,7 @@
   "scopeName": "source.ini",
   "type": "tree-sitter",
   "parser": "tree-sitter-ini",
-  "injectionRegex": "^(ini)$",
+  "injectionNames": ["ini"],
   // `npmrc` is npm's own config, which npm reads with the `ini` package. It
   // used to be claimed by language-shellscript, where a `;` comment is a
   // command separator and every comment tokenized as shell.
@@ -17,11 +17,11 @@
     // reporting `diverged` or a nonzero `behind` means it is not.
     "parserSource": "github:justinmk/tree-sitter-ini#v1.4.0",
     "wasmBuildTool": "tree-sitter-cli#v0.26.13",
-    "grammar": "tree-sitter-ini/tree-sitter-ini.wasm",
-    "highlightsQuery": "tree-sitter-ini/highlights.scm",
-    "foldsQuery": "tree-sitter-ini/folds.scm",
+    "grammar": "ini.wasm",
+    "highlightsQuery": "ini-highlights.scm",
+    "foldsQuery": "ini-folds.scm",
     // No indents query: INI sections do not nest, so there is nothing to
     // indent and a rule here would only fight the user.
-    "tagsQuery": "tree-sitter-ini/tags.scm"
+    "tagsQuery": "ini-tags.scm"
   }
 }
