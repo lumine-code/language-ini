@@ -3,7 +3,7 @@
   "scopeName": "source.ini",
   "type": "tree-sitter",
   "parser": "tree-sitter-ini",
-  "injectionNames": ["ini"],
+  "injectionNames": ["ini", "conf", "dosini"],
   // `npmrc` is npm's own config, which npm reads with the `ini` package. It
   // used to be claimed by language-shellscript, where a `;` comment is a
   // command separator and every comment tokenized as shell.
