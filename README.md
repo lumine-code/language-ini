@@ -18,10 +18,10 @@ To install `language-ini` search for it in the Install pane of the Lumine settin
 
 Also used for `.cfg`, `.conf`, `.desktop`, `.editorconfig`, `.inf` and `.prefs` files. Java `.properties` and Git's config files are deliberately left to their own grammars.
 
-## Services
+## Injections
 
-- `hyperlink.injection`: consumed to highlight URLs inside INI files as clickable links.
-- `todo.injection`: consumed to highlight `TODO`-style markers inside comments.
+- Static Tree-sitter injections highlight URLs with `language-hyperlink`.
+- Static Tree-sitter injections highlight comment markers with `language-todo`.
 
 ## Contributing
 
