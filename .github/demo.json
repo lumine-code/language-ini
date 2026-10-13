@@ -1,0 +1,16 @@
+{
+  "title": "language-ini",
+  "description": "INI syntax highlighting in the editor.",
+  "recordedOn": "2026-10-13",
+  "sourceRevision": "162fe4714b50762aa2fda44de00d6ebcf28cc916",
+  "mode": "normal",
+  "fontSettings": "default",
+  "images": [
+    {
+      "file": "demo.png",
+      "label": "INI syntax highlighting at the default editor font size.",
+      "width": 1100,
+      "height": 360
+    }
+  ]
+}

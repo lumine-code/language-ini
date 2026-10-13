@@ -10,6 +10,8 @@ INI language support.
 - **Folding**: folds each section.
 - **Symbol navigation**: section headers.
 
+![INI syntax highlighting at the default editor font size.](.github/demo.png)
+
 ## Installation
 
 To install `language-ini` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-ini`.
