@@ -1,16 +1,61 @@
 {
   "title": "language-ini",
-  "description": "INI syntax highlighting in the editor.",
-  "recordedOn": "2026-10-13",
-  "sourceRevision": "162fe4714b50762aa2fda44de00d6ebcf28cc916",
+  "description": "INI syntax highlighting at the default editor font size.",
+  "recordedOn": "2026-10-14",
+  "sourceRevision": "30c871b707aa12e2e6b37ebf2e280b04ec4618d2",
+  "themeSourceRevision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
   "mode": "normal",
   "fontSettings": "default",
+  "scenario": "demo.js",
+  "recipeHash": "838a3b1e7a332a8f2ac1aeca7849355cb4fee715f3239464fb6086356390d394",
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "electron": "44.7.0",
+    "chrome": "152.0.7977.130",
+    "devicePixelRatio": 1,
+    "locale": "en-GB",
+    "fontFamily": "Fira Code, Menlo, DejaVu Sans Mono, Consolas, monospace",
+    "fontSize": 14,
+    "themes": ["one-day-syntax", "one-day-ui"]
+  },
+  "viewport": { "width": 1100, "height": 360 },
+  "cornerRadius": 10,
+  "sources": {
+    "editor": {
+      "revision": "c4d7a05fe6960ae6fb041981d6cf13e9c0286b17",
+      "dirty": true,
+      "workingTreeHash": "af0ec098e764416df9522f3c6e555050b520e4700da382b2b983b2ff3742bd0a"
+    },
+    "package": {
+      "revision": "30c871b707aa12e2e6b37ebf2e280b04ec4618d2",
+      "dirty": true,
+      "workingTreeHash": "7abb1bd19b2548b9d026b33f8db9875d656e2323add52e05a7d16692bea99b64"
+    },
+    "language-ini": {
+      "revision": "30c871b707aa12e2e6b37ebf2e280b04ec4618d2",
+      "dirty": true,
+      "workingTreeHash": "7abb1bd19b2548b9d026b33f8db9875d656e2323add52e05a7d16692bea99b64"
+    },
+    "one-theme": {
+      "revision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
+      "dirty": true,
+      "workingTreeHash": "50ec2f83a6347dd8113870992ec4eb2be4014f3d9e12213c2f51b543f1eca793"
+    }
+  },
+  "fixtures": [
+    {
+      "file": "example.ini",
+      "sha256": "bc2f305459982daac86e39fe670c9a0f5b4a20290032bddac72397644c04de81"
+    }
+  ],
   "images": [
     {
       "file": "demo.png",
       "label": "INI syntax highlighting at the default editor font size.",
       "width": 1100,
-      "height": 360
+      "height": 360,
+      "sha256": "8d2f1c0ff50131c9e3921c0ca82bdfb6ae3b2a921de02a1e7e769f8aee429cf2"
     }
   ]
 }
